@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Baxter Travel</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -18,16 +18,25 @@
     />
   </head>
 
-  <body>
+  <body class="bg-light">
     <header>
       <!-- place navbar here -->
        <!-- Nav tabs -->
+       <nav>
+            <div class="nav-item float-start flex-shrink-0">
+        
+                <img src="logo.jpg" height="40" width="40" alt="Baxter Travel Logo">
+            </div>
+
        <ul
-        class="nav nav-tabs"
+        class="nav nav-tabs text-white bg-warning justify-content-center"
         id="navId"
         role="tablist"
        >
-        <li class="nav-item">
+       
+
+    
+        <li class="nav-item ">
           <a
             href="#tab1Id"
             class="nav-link active"
@@ -47,10 +56,13 @@
             >Destinations</a
           >
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#tab2Id">Action</a>
-            <a class="dropdown-item" href="#tab3Id">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#tab4Id">Action</a>
+            <a class="dropdown-item" href="#tab4Id">Asia</a>
+            <a class="dropdown-item" href="#tab3Id">North America</a>
+            <a class="dropdown-item" href="#tab3Id">South America</a>
+            <a class="dropdown-item" href="#tab3Id">Antartica</a>
+            <a class="dropdown-item" href="#tab2Id">Europe</a>
+            <a class="dropdown-item" href="#tab3Id">Americas</a>
+            <a class="dropdown-item" href="#tab4Id">Oceiana</a>
           </div>
         </li>
         <li class="nav-item" role="presentation">
@@ -65,16 +77,9 @@
         </li>
         <li class="nav-item" role="presentation">
           <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">About us</a>
-            <li>
-                <div class="d-flex">
-                    <div class="flex-grow-1 ms-3">
-                    </div>
-                    <div class="flex-shrink-0">
-                        <img class="float-end" src="logo.jpg" height="40" width="40" alt="Baxter Travel Logo">
-                    </div>
-                </div>
-            </li>
+        </li>
        </ul>
+    </nav>
        
       <!-- Tab panes -->
        <div class="tab-content" id="myTabContent">
@@ -94,48 +99,137 @@
        </script>
        
     </header>
-    <main>    <h2 class="text-center mt-3">Bootstrap Responsive Layout</h2>
-        <div class="text-center my-3">Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works.</div>
-        <div class="container">
-            <!--Row with three equal columns-->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="demo-content">.col-lg-4</div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="demo-content bg-alt">.col-lg-4</div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="demo-content">.col-lg-4</div>
+    <main>
+        <h1 class="text-center mt-3">Baxter Travel</h1>
+        <!-- Row with three equal columns -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg fw-bold">
+                    <div class="card-header bg-info text-center text-white">
+                        Gumbet, Turkey £442PP
+                    </div>
+                    <div class="card-body">
+                        <div id="carouselId1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="beach.jpg" class="w-100 h-100 d-block rounded" alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="gumbet.jpg" class="w-100 d-block rounded" alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="house.jpg" class="w-100 d-block rounded" alt="Third slide" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselId1"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselId1"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
     
-            <!--Row with three columns divided in 1:4:1 ratio-->
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="demo-content">.col-lg-2</div>
+            <!-- Card 2 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-info text-center text-white fw-bold">
+                        Koh Samui, Thailand £856PP
+                    </div>
+                    <div class="card-body">
+                        <div id="carouselId2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="temple.jpg" class="w-100 h-100 d-block rounded" alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="rocks.jpg" class="w-100 d-block rounded" alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="ocean.jpg" class="w-100 d-block rounded" alt="Third slide" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselId2"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselId2"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="demo-content bg-alt">.col-lg-8</div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="demo-content">.col-lg-2</div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg fw-bold">
+                    <div class="card-header bg-info text-center text-white">
+                        Paris, France £692PP
+                    </div>
+                    <div class="card-body">
+                        <div id="carouselId3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="arc.jpg" class="w-100 h-100 d-block rounded" alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="tower.jpg" class="w-100 d-block rounded" alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="bridge.jpg" class="w-100 d-block rounded" alt="Third slide" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselId3"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselId3"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
     
-            <!--Row with three columns divided unevenly-->
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="demo-content">.col-lg-3</div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="demo-content bg-alt">.col-lg-7</div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="demo-content">.col-lg-2</div>
-                </div>
-            </div>
-        </div></main>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
